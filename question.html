@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CS 290 Final Project - Questionnaire</title>
+        <link rel="stylesheet" href="question.css" type="text/css">
+    </head>
+    <body>
+        <div class="topnav" id="topnav">
+            <a href="home.html">Home</a>
+            <a href="images.html">Images</a>
+            <a href="recs.html">Recommendations</a>
+            <a class="active" href="question.html">Questionnaire</a>
+        </div>
+        <h1>Questionnaire</h1>
+        <p>If you would like, fill out this survey!</p>
+        <div class="form" id="form">
+            <form name="myForm" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" target="_blank"
+        method="GET">
+        <fieldset>
+            <legend>Travel Questions</legend>
+        <br>
+        <fieldset>
+            <label>Name:</label>
+                <input type="text" name="name_input" size="30" maxlength="100">
+                <div class="error" id="name_error"></div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label>E-mail:</label>
+                <input type="text" name="email_input" size="30" maxlength="100">
+                <div class="error" id="email_error"></div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>How many countries (other than your home country) have you been to?</p>
+            <label>
+                <input type="radio" name="numCountry" value="zero" /> 0
+            </label>
+                <br>
+            <label>
+                <input type="radio" name="numCountry" value="1-5" /> 1-5
+            </label>
+                <br>
+            <label>
+                <input type="radio" name="numCountry" value="5-10" /> 5-10
+            </label>
+                <br>
+            <label>
+                <input type="radio" name="numCountry" value="10+" /> 10+
+            </label>
+            <br>
+            <p>If you could travel anywhere in the world, where would you go?</p>
+            <label>
+                <input type="text" name="trvlCountry" size="30" maxlength="100">
+            </label>
+            <br><br>
+            <button type="submit" id ="submit_button" value="Submit">Submit</button>
+            
+            
+        </fieldset>
+        </div>
+        <br><br>
+    </body>
+    <footer>
+        <p>Website by Michael Allcock - CS290 (2021)</p>
+    </footer>
+
+</html>
